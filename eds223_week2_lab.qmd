@@ -303,6 +303,10 @@ tm_shape(world_coffee_inner) +
   tm_layout(legend.outside = TRUE)
 ```
 
+```{r}
+coffee_world <- left_join(coffee_data, world, by = "name_long")
+class(coffee_world)
+```
 
 
 
